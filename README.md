@@ -1,4 +1,4 @@
-# Owen_Portfolio
+# Owen's Portfolio
 
 # [Using Data to Power a $300M Campaign at University of San Francisco](https://www.salesforce.org/blog/data-powered-campaign-usf/)
 An article showcasing my work
