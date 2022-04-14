@@ -1,0 +1,96 @@
+---
+title: "How does US economy affect USF donor growth?"
+author: "Yi Xie"
+date: "4/14/2022"
+output:
+  html_document:
+    df_print: paged
+---
+
+#### Research Question/ Goal:
+For any U.S. higher education, a large portion of a school's operating budget comes from endowment funds. Donating to your university also helps give back to the next generation of students. The money you donate to the school is often used for new scholarships and to help fund new programs for the next class of students who will be attending your college. Additionally, most rankings in national magazines rank colleges based on the percentage of alumni who give back to the school. More donors will lead to higher rankings. AT USF, our donor count numbers have been declining since 2008; and we have been searching for quite some time as to “why” our donor numbers have decreased. Previous economic studies have shown that economic factors have large impacts in annual charitable giving. So, how does the current economy affect the behavior of USF donors? What does this mean for us during economic shocks such as the COVID 19 economic crisis? In this project, we will try to uncover these questions by looking at our past donor data.
+
+#### Analysis Plan:
+Correlation Analysis and Regression Analysis: find the correlation between the USF yearly donor numbers and US economic outcomes (US GDP per Capita), Giving per USF Donors and NASDAQ performance. By doing this, we can roughly estimate or forecast the total amount we can expect and set goals for the present. Also, I want to find out what would happen to our donor growth if an economy shock happens; and what happens to US economy would negatively or positively impact the growth of USF donors.
+
+I got the yearly donor data which contains Year, Donor Count and Total Donation Amount from the USF development side. I also got the US economic yearly data from macrotrends.net which contains Year, US GDP per Capita and Annual_Growth_rate (GDP per Capita growth rate); as well as the NASDAQ historical annual data from macrotrends.net which contains Year and Average Closing Price. Then I combined them into one table by Year, and included every data records from 1986 to now (because our giving data was not very accurate before 1986).
+
+```{r eval=FALSE, include=FALSE}
+ECON_DATA_R_raw <- read.csv("ECON_DATA_R_raw_data.csv", head=TRUE, sep=",")
+ECON_DATA_R2_raw  <- ECON_DATA_R_raw[ECON_DATA_R_raw$CY >= 1986, ]
+str(ECON_DATA_R2_raw)
+summary(ECON_DATA_R2_raw)
+```
+
+![](ecom_final_p_1.png)
+
+From the graph above, we can see that the trend in number of USF donors follows the US GDP per Capita Growth rate trend quite a bit. During some recessions, both have some ups and downs. So this raises the question, how exactly does GDP per capita in the US affect the number of USF donors? And how much of an impact would a positive or negative economic shock have on the number of USF donors?
+
+```{r}
+ECON_DATA_R <- read.csv("ECON_DATA_R.csv", head=TRUE, sep=",")
+ECON_DATA_R2 <- ECON_DATA_R[ECON_DATA_R$CY >= 1986, ]
+cor.test(ECON_DATA_R2$DONOR_COUNT, ECON_DATA_R2$US_GDP_per_Capita)
+logit_model <- lm(DONOR_COUNT ~ US_GDP_per_Capita, data = ECON_DATA_R2)
+summary(logit_model)
+```
+
+![](ecom_final_p_1_2.png)
+
+As we can see from the model above, There is some kind of correlation between USF donor numbers and US GDP per capita (with a p-value of 0.015); however, we also got a very low R-squared; which means US GDP per capita may not be the only factor to impact USF donor number. What are the other potential factors? Let's discuss more here.  
+
+#### Progress & Visualization:
+Frist, let's see how much of an impact would a positive or negative economic shock have on the number of USF donors?
+I graphed the square root of USF donor count growth rate by using this formula, ((Di – D(i-1))/D(i-1))^(1/2), where Di is the total USF donor count in year I, and D(i-1) is the USF donor count in the prior year, as well as the US GDP per Capita growth rate acceleration by using this formula, (Ri – R(i-1))/R(i-1)), where Ri is the US GDP per Capita growth rate in year i. The US GDP per Capita growth rate acceleration can represent US economic shocks (positive or negative) when we see spikes on the line.
+
+![](ecom_final_p_2.png)
+
+```{r}
+cor.test(ECON_DATA_R2$sq_donor_growth_rate, ECON_DATA_R2$GDP_per_Capita_Growth_Acc)
+```
+
+From this correlation test, we can barely see a correlation between the USF donor growth rate and the pace of US GDP per Capita growth rate. However, from the graph above, we also can see these 2 lines lined up except at some points during the US economic shocks. 
+
+![](ecom_final_p_3.png)
+
+```{r}
+ECON_DATA_R3 <- ECON_DATA_R[ECON_DATA_R$CY >= 1986 & ECON_DATA_R$CY != 1992 & ECON_DATA_R$CY != 2009 & ECON_DATA_R$CY != 2010 & ECON_DATA_R$CY != 2017 & ECON_DATA_R$CY != 2020 & ECON_DATA_R$CY != 2021, ]
+cor.test(ECON_DATA_R3$sq_donor_growth_rate, ECON_DATA_R3$GDP_per_Capita_Growth_Acc)
+```
+
+When we take out those points during the US economic shocks, the new correlation test improves the result to have a correlation score of 0.456 with a 0.01 p-value.
+
+From the analysis above, we also can see that, shocks of the US economy actually won't help to increase our donor growth (as fast as in the years that US economy had a constant growth); This may be due to people who were not recovered by the downfall of the economy in the previous year, and they were still in a panic mode.
+
+So we can see that the economic shock in the US won't affect the number of USF donors to a large extent, but what will?
+According to this article "Larger Donations, Fewer Donors" (https://www.insidehighered.com/news/2019/06/20/donations-colleges-are-number-donors-down), the passage of the 2017 Tax Cuts and Jobs Act, which eliminated the need for many middle-class people to itemize their deductions would largely impact the number of donors. Many have worried that, absent those itemized deductions, donations would drop. the organization's philanthropic is disproportionately reliant on small donations from middle-income donors, who will be more affected by the tax code changes, as this is indeed the group that will move from itemized lists to non-projects, and will no longer be able to deduct charitable gifts.
+
+```{r}
+ECON_DATA_R2$is_shock <- ifelse(ECON_DATA_R2$CY == 1992 | ECON_DATA_R2$CY == 2009 | ECON_DATA_R2$CY == 2010 | ECON_DATA_R2$CY == 2017 | ECON_DATA_R2$CY == 2020 | ECON_DATA_R2$CY == 2021, 1, 0)
+ECON_DATA_R2$after_tax_cuts <- ifelse(ECON_DATA_R2$CY >= 2017, 1, 0)
+logit_model2 <- lm(DONOR_COUNT ~ US_GDP_per_Capita + is_shock + after_tax_cuts, data = ECON_DATA_R2)
+summary(logit_model2)
+```
+
+So, if we put those valuables into the model, the R-squared is improved to 0.4755 from 0.16.
+
+We could argue that there is some correlation between the US economy and the growth in the number of USF donors over time. The drafted model shows that the ideal situation for USF donor count growth is for US GDP per Capita growth rate to have a steady rate of growth. When people feel their economic is growing steadily in the current year, and they are optimistic about their future economic growth, they are more willing to give to USF. However, any Tax act that would affect charitable gift deductions would mess up the trend and largely impact the USF donor growth.
+
+#### Giving per USF Donors and NASDAQ performance
+
+Per Give Global Blog (https://charity.org/give-global-blog/developing-your-fundraising-strategy-under-triple-threat-economic): there’s a strong relationship between how much money Americans give to charity and the stock market’s performance. That means people give more when they feel that they have money to spare. I also did a correlation analysis between Giving per USF Donors and NASDAQ performance to see if this statement is also true for USF.
+
+![](ecom_final_p_5.png)
+
+```{r}
+ECON_DATA_R2$AMT_per_Donor <- ECON_DATA_R2$TOTAL_AMOUNT/ECON_DATA_R2$DONOR_COUNT
+cor.test(ECON_DATA_R2$AMT_per_Donor, ECON_DATA_R2$Average_Closing_Price)
+```
+
+```{r}
+logit_model2 <- lm(AMT_per_Donor ~ Average_Closing_Price, data = ECON_DATA_R2)
+summary(logit_model2)
+```
+
+![](ecom_final_p_6.png)
+
+As we can see, the USF Giving per USF Donor definitely follows a linear trend with NASDAQ performance! We can argue that when NASDAQ performance is strong, the Giving per USF Donor will be higher. However, in this research, we could not find the real causality between the NASDAQ performance and the Giving amounnt per USF Donor; more future studies need to be conducted to determine USF donor behavior as we see strong stock market performance. Maybe every donor will be more generous when stocks are doing well; or maybe only those with high-performing stocks will give more to USF. For this, we definitely need different strategies.
