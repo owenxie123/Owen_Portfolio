@@ -1,3 +1,54 @@
+/*
+Sense SQL Challenge
+
+
+Sense has a few dozen fake sensors deployed in a fake customer building. 
+All sensors are expected to "report" to the Sense cloud on a roughly 10-minute cadence. 
+When a sensor reports, it captures a count of all the people within its field of view.
+
+In this challenge you will be given access to mock Sense data in a PostgreSQL database with 3 tables. 
+Two of the tables are static data about a fleet of "Sensors" and their "Partitions". 
+The third is a feed of sensor reports and their person counts that have come from those sensors over the course of a week.
+
+Tables: 
+
+sensors: Sense sensor devices alive and reporting in the customer building. Sensors have a primary key id and a name. 
+
+partitions: A partition represents a region of interest under a sensor camera’s field of view. 
+A sensor can have one or more partitions. Sensor reports (described below) are specific to a unique sensor + partition pair. 
+Note: each time a sensor with multiple partitions reports, we will get multiple new entries in the Person Counts table - one per partition of that sensor.
+The Partitions table has a primary key id and foreign key sensor_id, which joins to the Sensors table.
+
+person_counts: Each row in this table corresponds to a report from a sensor over one of that sensor's partitions, plus a primary key id column. 
+The columns include:
+    • count_timestamp: the timestamp that the report was delivered (in UTC).
+    • person_count: the number of people within the sensor's partition at that timestamp.
+    • device_id: An identifier of the sensor+partition pair that generated this report. 
+                 The device_id is the string concatenation of "<sensor_name> / <partition_id>" 
+                 (note the forward slash in the middle, and the fact that a sensor name and a partition id are what are being concatenated).
+
+Challenge 1:
+	The person_counts table’s device_id column is in the format: <sensor_name> / <partition_id>. 
+       Create a temporary View off of the person_counts table that has sensor_name and partition_id split out into their own columns. 
+       This view should also have count_timestamp and person_counts columns. This view can be used in the following challenges.
+
+Challenge 2:
+       Find the average person_count across sensor reports with a non-zero person_count by sensor by day across all days. 
+       Assume UTC timezones for all timestamps. Feel free to use your View from part 1 in this challenge.
+       Output columns should include sensor_name, date, and avg_person_count
+
+Challenge 3:
+       Find the “Device Heath” of each sensor across all days. 
+       Device Health is a measure of , but with the nuance that a health sensor is expected to report once every ten minutes 
+       (though they have been known to over-report or under-report) during working hours (from 9am to 5pm). 
+       Feel free to use your View from part 1 in this challenge.
+       The Device Health should be represented as a string color with the following conditions:
+              Green: >= 99% device health
+              Yellow: >=95% device health
+              Orange: >=90% device health
+              Red: <90% device health
+       Output columns should include sensor_name and device_health_color
+*/
 
 --Checking the data
 
