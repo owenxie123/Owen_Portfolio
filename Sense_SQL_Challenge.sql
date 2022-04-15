@@ -28,7 +28,7 @@ The columns include:
                  (note the forward slash in the middle, and the fact that a sensor name and a partition id are what are being concatenated).
 
 Challenge 1:
-	The person_counts table’s device_id column is in the format: <sensor_name> / <partition_id>. 
+       The person_counts table’s device_id column is in the format: <sensor_name> / <partition_id>. 
        Create a temporary View off of the person_counts table that has sensor_name and partition_id split out into their own columns. 
        This view should also have count_timestamp and person_counts columns. This view can be used in the following challenges.
 
