@@ -34,4 +34,7 @@ Sense has a few dozen fake sensors deployed in a fake customer building. All sen
 # [Project 3: A Pandora AD Demand Analysis](https://github.com/owenxie123/Owen_Portfolio/blob/main/Dosage%2C_Timing%2C_and_IV.ipynb)
 A coursework showcasing my Python skills
 
+<img src="/Owen_Portfolio/Python.PNG" 
+        style="display: block; margin: 0 auto" />
+
 In this problem set, I examined data similar to the Pandora Ad Demand Paper, moved beyond treatment effects to investigate dosage, investigated how treatment effects change over time, used instrument variable to handle non-compliance in the experiment and Examined heterogeneous treatment effects. 
