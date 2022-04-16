@@ -26,6 +26,9 @@ For any US higher education, large percentage of school’s operating budget cam
 # [Project 2: A Sense SQL Challenge](https://github.com/owenxie123/Owen_Portfolio/blob/main/Sense_SQL_Challenge.sql)
 A take-home challenge to demonstrate my SQL skills
 
+<img src="/Owen_Portfolio/SQL.PNG" 
+        style="display: block; margin: 0 auto" />
+
 Sense has a few dozen fake sensors deployed in a fake customer building. All sensors are expected to "report" to the Sense cloud on a roughly 10-minute cadence. When a sensor reports, it captures a count of all the people within its field of view. In this challenge, I needed to create a temporary View off of the person_counts table that has sensor_name and partition_id split out into their own columns, find the average person_count across sensor reports with a non-zero person_count by sensor by day across all days and find the “Device Heath” of each sensor across all days. 
 
 # [Project 3: A Pandora AD Demand Analysis](https://github.com/owenxie123/Owen_Portfolio/blob/main/Dosage%2C_Timing%2C_and_IV.ipynb)
