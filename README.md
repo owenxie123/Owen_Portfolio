@@ -4,6 +4,9 @@ I have 9 years of data experience, and I have collaborated with multiple cross-f
 [<img src="/Owen_Portfolio/skills.PNG" 
         style="display: block; margin: 0 auto" />](https://www.linkedin.com/in/owen-yi-xie-a309a378/)
 
+<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark" data-type="HORIZONTAL" data-vanity="owen-yi-xie-a309a378" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/owen-yi-xie-a309a378?trk=profile-badge">Owen (Yi) Xie</a></div>
+             
 Email: owen4937@gmail.com
 
 # [Using Data to Power a $300M Campaign at University of San Francisco](https://www.salesforce.org/blog/data-powered-campaign-usf/)
