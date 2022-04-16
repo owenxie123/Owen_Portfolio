@@ -18,6 +18,9 @@ For several years, Tableau has served as the primary data analytics and visualiz
 # [Project 1: How does US economy affect college donor growth](https://github.com/owenxie123/Owen_Portfolio/blob/main/How%20does%20US%20economy%20affect%20college%20donor%20growth.pdf)
 A job-related project demonstrating my R skills and data visualization skills
 
+<img src="/Owen_Portfolio/ecomfinal_1.PNG" 
+        style="display: block; margin: 0 auto" />
+
 For any US higher education, large percentage of school’s operating budget came from endowment. Donating money to your college also helps give back to the next generation of students. The money that you donate to your school often goes to new scholarships and to help fund new programs for the next classes of students who will attend your college. Also, most rankings in national magazines rank colleges based on the percentage of alumni who gave back to their schools; higher donor counts would lead to higher rankings.  Previous economic studies have shown that economic factors have large impacts in annual charitable giving. So, how does the current economy affect the behavior of college donors? What does this mean for us during economic shocks such as the COVID 19 economic crisis? In this project, we will try to uncover these questions by looking at our past donor data.
 
 # [Project 2: A Sense SQL Challenge](https://github.com/owenxie123/Owen_Portfolio/blob/main/Sense_SQL_Challenge.sql)
