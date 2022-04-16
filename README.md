@@ -1,6 +1,8 @@
 # [About me:](https://www.linkedin.com/in/owen-yi-xie-a309a378/)
 I have 9 years of data experience, and I have collaborated with multiple cross-functional teams as well as leadership team. I am comfortable solving complex problems and presenting to other people. I have extensive experience with many tools and knowledge in SQL, Tableau, R, Python, Salesforce, machine learning and A/B testing. My background in Mathematics (BS) and Applied Economics (MS) enables me to understand and solve real-world data problems. I pride myself on being a person who thinks outside the box. And I also show that I have leadership qualities and I always care about other people in real life.
 
+![skills](/Owen_Portfolio/skills.png)
+
 Email: owen4937@gmail.com
 
 # [Using Data to Power a $300M Campaign at University of San Francisco](https://www.salesforce.org/blog/data-powered-campaign-usf/)
