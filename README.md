@@ -9,6 +9,9 @@ Email: owen4937@gmail.com
 # [Using Data to Power a $300M Campaign at University of San Francisco](https://www.salesforce.org/blog/data-powered-campaign-usf/)
 An article showcasing my work
 
+<img src="/Owen_Portfolio/USF_photo_high_res.jpg" 
+        style="display: block; margin: 0 auto" />
+
 For several years, Tableau has served as the primary data analytics and visualization platform for the University of San Francisco (USF), a private university located on a beautiful 55-acre campus in the heart of San Francisco. With Tableau, the USF advancement team produces lists, dashboards, KPIs, automated reports, and predictive analytics. The tool also serves as a bridge to bring data together across platforms.
 
 # [Project 1: How does US economy affect college donor growth](https://github.com/owenxie123/Owen_Portfolio/blob/main/How%20does%20US%20economy%20affect%20college%20donor%20growth.pdf)
