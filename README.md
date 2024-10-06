@@ -8,8 +8,8 @@ My background in Mathematics (BS) and Applied Economics (MS) enables me to under
              
 Email: owen4937@gmail.com
 
-# [Project 1: Higher Ed Data-Driven Strategic Planning](https://github.com/owenxie123/Owen_Portfolio/blob/main/Copy%20of%20New%203D%20Model.docx%20(1).pdf)
-Unlocking Generosity: Strategic Donor Segmentation for Fundraising Success
+# [Project 1: Unlocking Generosity: Strategic Donor Segmentation for Fundraising Success](https://github.com/owenxie123/Owen_Portfolio/blob/main/Copy%20of%20New%203D%20Model.docx%20(1).pdf)
+A data-driven strategic plan for higher education fundraising
 
 [<img src="/Owen_Portfolio/3D_ML.png" 
         style="display: block; margin: 0 auto" />](https://github.com/owenxie123/Owen_Portfolio/blob/main/Copy%20of%20New%203D%20Model.docx%20(1).pdf)
