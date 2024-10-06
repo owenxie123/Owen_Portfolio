@@ -8,11 +8,11 @@ My background in Mathematics (BS) and Applied Economics (MS) enables me to under
              
 Email: owen4937@gmail.com
 
-# [Project 1: Higher Ed Data-Driven Strategic Planning](https://github.com/owenxie123/Owen_Portfolio/blob/main/How%20does%20US%20economy%20affect%20college%20donor%20growth.pdf)
+# [Project 1: Higher Ed Data-Driven Strategic Planning](https://github.com/owenxie123/Owen_Portfolio/blob/main/Copy%20of%20New%203D%20Model.docx%20(1).pdf)
 Unlocking Generosity: Strategic Donor Segmentation for Fundraising Success
 
-[<img src="/Owen_Portfolio/ecomfinal_1.PNG" 
-        style="display: block; margin: 0 auto" />](https://github.com/owenxie123/Owen_Portfolio/blob/main/How%20does%20US%20economy%20affect%20college%20donor%20growth.pdf)
+[<img src="/Owen_Portfolio/3D_ML.PNG" 
+        style="display: block; margin: 0 auto" />](https://github.com/owenxie123/Owen_Portfolio/blob/main/Copy%20of%20New%203D%20Model.docx%20(1).pdf)
 
 Today, we’re going on a journey—a journey of how an organization, much like ours, learned to unlock the true potential of their donors by segmenting them thoughtfully and strategically. Through it, we’ll see how understanding different types of supporters can lead to incredible success in fundraising. We always have big dreams for the future, and we relied on the generosity of our supporters to bring those dreams to life. But we also face a challenge that many organizations encounter: not all our donors are ready or able to give in the same way or at the same time. We need a strategy. We realized that to unlock the potential of our supporters, we have to recognize the unique qualities of each donor and engage them differently.
 
