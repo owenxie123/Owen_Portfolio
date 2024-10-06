@@ -1,5 +1,5 @@
 # [About me:](https://www.linkedin.com/in/owen-yi-xie-a309a378/)
-I have 9 years of data experience, and I have collaborated with multiple cross-functional teams as well as leadership team. I am comfortable solving complex problems and presenting to other people. I have extensive experience with many tools and knowledge in SQL, Tableau, R, Python, Salesforce, machine learning and A/B testing. 
+I have more than a decade of data experience, and I have collaborated with multiple cross-functional teams as well as leadership team. I am comfortable solving complex problems and presenting to other people. I have extensive experience with many tools and knowledge in SQL, Tableau, R, Python, Salesforce, machine learning and A/B testing. 
 
 My background in Mathematics (BS) and Applied Economics (MS) enables me to understand and solve real-world data problems. I pride myself on being a person who thinks outside the box. And I also show that I have leadership qualities and I always care about other people in real life.
 
