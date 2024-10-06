@@ -16,8 +16,11 @@ A job-related project demonstrating my R skills and data visualization skills
 
 For any US higher education, large percentage of school’s operating budget came from endowment. Donating money to your college also helps give back to the next generation of students. The money that you donate to your school often goes to new scholarships and to help fund new programs for the next classes of students who will attend your college. Also, most rankings in national magazines rank colleges based on the percentage of alumni who gave back to their schools; higher donor counts would lead to higher rankings.  Previous economic studies have shown that economic factors have large impacts in annual charitable giving. So, how does the current economy affect the behavior of college donors? What does this mean for us during economic shocks such as the COVID 19 economic crisis? In this project, we will try to uncover these questions by looking at our past donor data.
 
-# [Project 3: Leveraging Tableau as a Business Intelligence Solution](https://github.com/owenxie123/Owen_Portfolio/blob/main/Sense_SQL_Challenge.sql)
+# [Project 3: Leveraging Tableau as a Business Intelligence Solution](https://github.com/owenxie123/Owen_Portfolio/blob/main/greatest%20strengths%20is%20problem.pdf)
 Why Tableau is My Go-To Business Intelligence Tool
+
+[<img src="/Owen_Portfolio/TABLEAU_SOFTWARE_LOGOjpg_Logo.jpg" 
+        style="display: block; margin: 0 auto" />](https://github.com/owenxie123/Owen_Portfolio/blob/main/greatest%20strengths%20is%20problem.pdf)
 
 I enjoy using Tableau as my primary business intelligence tool due to its versatility and powerful data visualization capabilities. It allows me to transform complex datasets into clear, actionable insights that are easily understood by both technical and non-technical stakeholders. Tableau’s user-friendly interface, combined with its ability to handle large volumes of data, makes it an ideal choice for creating dashboards and reports that drive data-driven decision-making. I particularly appreciate how it empowers users to explore data interactively, making it a highly effective tool for both my own work and for enabling others to gain insights independently.
 
