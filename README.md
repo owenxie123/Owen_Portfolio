@@ -1,7 +1,7 @@
 # [About me:](https://www.linkedin.com/in/owen-yi-xie-a309a378/)
-I have more than a decade of data experience, and I have collaborated with multiple cross-functional teams as well as leadership team. I am comfortable solving complex problems and presenting to other people. I have extensive experience with many tools and knowledge in SQL, Tableau, R, Python, Salesforce, machine learning and A/B testing. 
+With over a decade of experience in data analysis, I’ve had the opportunity to collaborate with diverse cross-functional teams and leadership. I thrive on solving complex problems and enjoy sharing insights through presentations. My expertise spans a wide range of tools, including SQL, Tableau, R, Python, Salesforce, machine learning, and A/B testing.
 
-My background in Mathematics (BS) and Applied Economics (MS) enables me to understand and solve real-world data problems. I pride myself on being a person who thinks outside the box. And I also show that I have leadership qualities and I always care about other people in real life.
+My academic background, with a BS in Mathematics and an MS in Applied Economics, gives me a solid foundation for tackling real-world data challenges. I’m known for my innovative thinking and pride myself on bringing creativity to every project. Additionally, I value strong leadership and genuinely care about the well-being of those I work with.
 
 <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark" data-type="HORIZONTAL" data-vanity="owen-yi-xie-a309a378" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/owen-yi-xie-a309a378?trk=profile-badge">Owen (Yi) Xie</a></div>
